@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Portfolio — Baptiste BOIN</title>
   <meta name="description" content="Portfolio de Baptiste BOIN — Etudiant BTS SIO SLAM. Projets C#, Python, Web et alternance." />
-  <meta property="og:title" content="Portfolio — Baptiste BOIN" />
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
@@ -13,22 +12,22 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
 </head>
 <body>
+  
   <header class="site">
     <div class="container topbar">
       <a class="brand" href="#hero" aria-label="Accueil">
-        <div class="logo"><span>BB</span></div>
+        <img class="logo" src="photo.jpg" alt="BB">
         <strong>Baptiste BOIN</strong>
       </a>
       <nav class="row" aria-label="Navigation principale">
-        <a href="#about" class="navlink" data-i18n="nav.about">À propos</a>
-        <a href="#skills" class="navlink" data-i18n="nav.skills">Compétences</a>
-        <a href="#projects" class="navlink" data-i18n="nav.projects">Projets</a>
-        <a href="#work" class="navlink" data-i18n="nav.work">Alternance</a>
-        <a href="#contact" class="navlink" data-i18n="nav.contact">Contact</a>
+        <a href="#about" class="navlink">À propos</a>
+        <a href="#skills" class="navlink">Compétences</a>
+        <a href="#projects" class="navlink">Projets</a>
+        <a href="#work" class="navlink">Alternance</a>
+        <a href="#contact" class="navlink">Contact</a>
       </nav>
       <div class="actions">
         <button class="btn icon-only" id="themeToggle" aria-label="Thème">🌗</button>
-        <button class="btn icon-only" id="langToggle" aria-label="Langue">FR</button>
       </div>
     </div>
   </header>
@@ -37,22 +36,22 @@
     <section id="hero" class="hero container">
       <div class="hero-inner">
         <div>
-          <h1 class="hero"><span data-i18n="hero.hi">Bonjour, je suis</span> <span class="accent">Baptiste BOIN</span> — <span data-i18n="hero.role">Alternant Développement (BTS SIO)</span></h1>
-          <div class="subtitle" data-i18n="hero.tag">Mayenne • Passionné de Dev, Jeux de Stratégie & Culture Japonaise</div>
+          <h1 class="hero">Bonjour, je suis <span class="accent">Baptiste BOIN</span> — Alternant Développement (BTS SIO)</h1>
+          <div class="subtitle">Mayenne • Passionné de Dev, Jeux de Stratégie & Culture Japonaise</div>
           <div class="badges" aria-label="Mots-clés">
             <span class="badge">C# .NET</span>
             <span class="badge">Python</span>
             <span class="badge">Symfony</span>
             <span class="badge">SQL Server</span>
-            <span class="badge">JavaScript</span>
+            <span class="badge">Entity Framework</span>
           </div>
           <div class="row" style="margin-top:1.5rem">
-            <a class="btn primary" href="#contact" data-i18n="cta.hire">Me contacter</a>
-            <a class="btn" href="cv.pdf" download data-i18n="cta.cv">Télécharger CV</a>
+            <a class="btn primary" href="#contact">Me contacter</a>
+            <a class="btn" href="cv.pdf" download>Télécharger CV</a>
           </div>
         </div>
         <figure class="portrait">
-          <img class="avatar" src="photo.jpg" alt="BB">
+          <img class="avatar" src="photo.jpg" alt="Baptiste Boin">
        </figure>
       </div>
     </section> 
@@ -60,16 +59,16 @@
     <section id="about">
       <div class="container grid cols-2">
         <div>
-          <h2 data-i18n="about.title">À propos de moi</h2>
-          <p data-i18n="about.p1">Étudiant en BTS SIO option SLAM et alternant, je conçois des outils pour répondre à des besoins concrets.</p>
-          <p data-i18n="about.p2">En dehors du code, je suis passionné par les jeux de stratégie, la musique et la culture japonaise.</p>
+          <h2>À propos de moi</h2>
+          <p>Je m'appelle Baptiste BOIN. Actuellement en BTS SIO (option SLAM) et alternant, je conçois des outils logiciels (RPA, Clients lourds, Web) pour optimiser les processus métier en entreprise.</p>
+          <p>En dehors du développement, je suis passionné par les jeux de stratégie, la musique et la culture japonaise.</p>
         </div>
         <div class="card">
-          <h3 data-i18n="about.quick">En bref</h3>
+          <h3>En bref</h3>
           <ul>
-            <li><strong data-i18n="about.stat1k">Études</strong> — <span data-i18n="about.stat1v">BTS SIO (En cours), BAC STI2D (Mention Bien)</span></li>
+            <li><strong>Études</strong> — BTS SIO (En cours), BAC STI2D (Mention Bien)</li>
             <li><strong>Age</strong> — 19 ans (2006)</li>
-            <li><strong>Passions</strong> — <span data-i18n="about.hobbies">Stratégie, Musique, Japon</span></li>
+            <li><strong>Passions</strong> — Stratégie, Musique, Japon</li>
           </ul>
           <div class="row" style="margin-top:.5rem">
             <a class="btn" href="https://github.com/bapt-mann" target="_blank">GitHub</a>
@@ -81,37 +80,36 @@
 
     <section id="skills">
       <div class="container">
-        <h2 data-i18n="skills.title">Compétences</h2>
+        <h2>Compétences</h2>
         <div class="grid cols-3">
           <div class="card">
-            <h3 data-i18n="skills.cat1">Langages & Web</h3>
+            <h3>Langages & Web</h3>
             <div class="skill-chips">
               <span class="chip">Python</span>
               <span class="chip">C# (.NET)</span>
               <span class="chip">PHP</span>
-              <span class="chip">HTML/CSS</span>
               <span class="chip">JavaScript</span>
-              <span class="chip">C</span>
+              <span class="chip">HTML/CSS</span>
             </div>
           </div>
 
           <div class="card">
-            <h3 data-i18n="skills.cat2">Données & BDD</h3>
+            <h3>Données & BDD</h3>
             <div class="skill-chips">
               <span class="chip">SQL Server</span>
               <span class="chip">MySQL</span>
-              <span class="chip">Requêtes & Vues</span>
+              <span class="chip">Transact-SQL</span>
             </div>
           </div>
 
           <div class="card">
-            <h3 data-i18n="skills.cat3">Outils & Frameworks</h3>
+            <h3>Outils & Frameworks</h3>
             <div class="skill-chips">
-              <span class="chip">Git / GitHub</span>
-              <span class="chip">Node.js</span>
-              <span class="chip">Symfony</span>
-              <span class="chip">Entity Framework</span>
+              <span class="chip">Git</span>
+              <span class="chip">Entity Framework Core</span>
               <span class="chip">WPF</span>
+              <span class="chip">Symfony</span>
+              <span class="chip">Tkinter</span>
             </div>
           </div>
         </div>
@@ -120,65 +118,65 @@
 
     <section id="projects">
       <div class="container">
-        <h2 data-i18n="projects.title">Projets & Missions</h2>
+        <h2>Projets d'Entreprise & Personnels</h2>
         <div class="grid cols-2">
           
           <article class="card project">
             <div>
-              <h3 data-i18n="p.demat.title">Outil Dématérialisation</h3>
-              <p class="muted" data-i18n="p.demat.desc">Automatisation de processus avec Python et Excel.</p>
+              <h3>RPA Dématérialisation </h3>
+              <p class="muted">Solution d'automatisation générant des PDF RH (Frais, RCR) depuis Excel. Intègre la gestion de cache de données et le chiffrement des données.</p>
               <div class="stack">
-                <span class="chip">Python</span><span class="chip">SQL Server</span><span class="chip">Excel</span>
+                <span class="chip">Python</span><span class="chip">PyWin32</span><span class="chip">SQL Server</span><span class="chip">Cryptography</span>
               </div>
             </div>
           </article>
 
           <article class="card project">
             <div>
-              <h3 data-i18n="p.sqltool.title">Outil Requêtes SQL</h3>
-              <p class="muted" data-i18n="p.sqltool.desc">Script d'exécution et d'analyse de requêtes multi-bases.</p>
+              <h3>Synchro TMS (VRM Link)</h3>
+              <p class="muted">Application WPF assurant le pont entre la télématique (Vehco) et l'ERP (Road Manager). Gestion des conflits et intégrité des données chauffeurs.</p>
               <div class="stack">
-                <span class="chip">Python</span><span class="chip">SQL Server</span><span class="chip">MySQL</span>
+                <span class="chip">C#</span><span class="chip">WPF</span><span class="chip">Entity Framework Core</span><span class="chip">SQL Server</span>
               </div>
             </div>
           </article>
 
           <article class="card project">
             <div>
-              <h3 data-i18n="p.wpfdb.title">Liaison BDD (WPF)</h3>
-              <p class="muted" data-i18n="p.wpfdb.desc">Application Desktop pour lier et comparer deux bases de données.</p>
+              <h3>Moniteur FTP Automatisé</h3>
+              <p class="muted">Service Windows surveillant des dossiers locaux en temps réel (Watchdog) pour déclencher des transferts FTP automatiques avec logs et alertes.</p>
               <div class="stack">
-                <span class="chip">C#</span><span class="chip">WPF</span><span class="chip">SQL Server</span>
+                <span class="chip">Python</span><span class="chip">Watchdog</span><span class="chip">Tkinter</span><span class="chip">Threading</span>
               </div>
             </div>
           </article>
 
           <article class="card project">
             <div>
-              <h3 data-i18n="p.contacts.title">Gestion Contacts (WPF)</h3>
-              <p class="muted" data-i18n="p.contacts.desc">Application de gestion de contacts CRUD.</p>
+              <h3>Générateur Excel SQL</h3>
+              <p class="muted">Outil sécurisé permettant aux utilisateurs d'exporter des résultats de requêtes SQL complexes vers Excel sans accès direct aux bases de données.</p>
               <div class="stack">
-                <span class="chip">C#</span><span class="chip">WPF</span><span class="chip">MySQL</span>
+                <span class="chip">Python</span><span class="chip">SQL Server</span><span class="chip">Security</span>
               </div>
             </div>
           </article>
 
           <article class="card project">
             <div>
-              <h3 data-i18n="p.spotify.title">App API Spotify</h3>
-              <p class="muted" data-i18n="p.spotify.desc">Exploitation de l'API Spotify via Node.js.</p>
+              <h3>Launcher d'Applications</h3>
+              <p class="muted">Interface centralisée permettant de lancer les différents outils internes (Demat, Requêteur, etc.) et de gérer les mises à jour.</p>
+              <div class="stack">
+                <span class="chip">C#</span><span class="chip">WPF</span><span class="chip">Deploy</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card project">
+            <div>
+              <h3>App API Spotify</h3>
+              <p class="muted">Application Web exploitant l'API Spotify pour la visualisation de données musicales et gestion de playlists.</p>
               <div class="stack">
                 <span class="chip">JavaScript</span><span class="chip">Node.js</span><span class="chip">API REST</span>
-              </div>
-            </div>
-          </article>
-
-          <article class="card project">
-            <div>
-              <h3 data-i18n="p.keylogger.title">KeyLogger C</h3>
-              <p class="muted" data-i18n="p.keylogger.desc">Projet bas niveau pour comprendre la gestion des inputs.</p>
-              <div class="stack">
-                <span class="chip">C</span><span class="chip">WinAPI</span>
               </div>
             </div>
           </article>
@@ -189,18 +187,18 @@
 
     <section id="work">
       <div class="container">
-        <h2 data-i18n="work.title">Alternance</h2>
+        <h2>Alternance</h2>
         <article class="card">
           <div class="row">
             <div>
               <h3>Ambroise Bouvier Transports</h3>
-              <div class="muted" data-i18n="work.dates">Contrat de 2 ans (En cours)</div>
+              <div class="muted">Contrat de 2 ans (En cours)</div>
             </div>
           </div>
           <ul style="margin-top:.5rem">
-            <li data-i18n="work.b1">Développement d'outils internes (Python, C#).</li>
-            <li data-i18n="work.b2">Gestion de bases de données (SQL Server).</li>
-            <li data-i18n="work.b3">Support utilisateur et maintenance.</li>
+            <li>Développement d'outils internes et automatisation (Python, C#, WPF).</li>
+            <li>Gestion de bases de données et maintien de l'intégrité (SQL Server).</li>
+            <li>Support utilisateur, déploiement et documentation technique.</li>
           </ul>
         </article>
       </div>
@@ -208,9 +206,9 @@
 
     <section id="contact">
       <div class="container">
-        <h2 data-i18n="contact.title">Contact</h2>
+        <h2>Contact</h2>
         <div class="card" style="text-align:center">
-          <h3 data-i18n="contact.letsTalk">Discutons</h3>
+          <h3>Discutons</h3>
           <p class="muted">baptiste.boin06@gmail.com</p>
           <div class="row" style="justify-content:center; margin-top:1rem">
              <a class="btn primary" href="mailto:baptiste.boin06@gmail.com">Envoyer un mail</a>
